@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fafbfc;
+}
+
+header {
+  display: flex;
+  padding-left: 1em;
+  align-items: center;
+  height: 50px;
+  background: linear-gradient(135deg, #ff6600, red);
+  box-shadow: 10px 10px 25px 0px rgba(46, 61, 73, 0.2);
+  color: white;
+}
+
+header img {
+  border: 1px solid white;
+}
+
+header h1 {
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.App {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.story_item.open {
+  grid-row: span 3;
+}
+
+.spinner {
+  margin: 1em;
+  display: flex;
+  margin-top: 50%;
+  justify-content: center;
+}
+
+.pagination {
+  padding: 0;
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination_item {
+  padding: 0.75em;
+  display: inline;
+}
+
+.pagination_link {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: #ff6600;
+}
+
+.pagination_link--active {
+  padding: 3px 10px;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #ff6600, red);
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  .App {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .story_item.open {
+    animation: opacity 0.5s ease-in-out;
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+}
+
+@media (min-width: 768px) {
+  .spinner {
+    margin-top: 20%;
+  }
+  .App {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
