@@ -10,6 +10,8 @@ ShallowWrapper {
     story={
         Object {
             "by": "by",
+            "kids": Array [],
+            "kidsItems": Array [],
             "text": "text",
             "title": "title",
             "url": "url",

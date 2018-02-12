@@ -65,9 +65,7 @@ class StoryItem extends Component<Props, State> {
                 {kidsItems.map((item) => {
                   if (item) {
                     if (item.text) {
-                      return (
-                        <li key={item.id}>{this.renderHTML(item.text)}</li> || <li>Undefined</li>
-                      );
+                      return <li key={item.id}>{this.renderHTML(item.text)}</li>;
                     }
                     return (
                       <li key={item.id} style={{ color: 'black' }}>
