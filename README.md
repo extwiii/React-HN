@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-* [live Demo](https://extwiii-hn.herokuapp.com/)
+- [live Demo](https://extwiii-hn.herokuapp.com/)
 
 Features
 --------
