@@ -6,7 +6,9 @@ Features
 --------
 - react 
 - eslint
-- prop-types
+- axios
+- jest
+- enzym
 - babel-eslint
 - eslint-config-airbnb
 - flow
