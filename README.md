@@ -37,10 +37,10 @@ yarn install
 yarn build
 
 # Test your app 
-yarnd test
+yarn test
 
 # Then start your app 
-yarnd start
+yarn start
 
 ```
 
